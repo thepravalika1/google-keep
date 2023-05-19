@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+      <h1>Google Notes project</h1>
+      <button id="deleteallnotes">Delete All Notes</button>
+    </header>
+  
+    <section class="noteslist">
+      
+    </section>
+  
+  
+    <hr>
+  
+  
+    <section>
+      <h2>Create New Note</h2>
+      <div class="createnote">
+        <input type="" id="createNoteTitle" placeholder="Enter Note Title">
+        <textarea id="createNoteContent" placeholder="Enter note description" name="" cols="30" rows="10"></textarea>
+        <button id="createNoteButton">Create Note</button>
+      </div>
+    </section>
+  
+  
+      
+    <script src="code.js"></script>
+  </body>
+  </html>
+  
+  
+  <style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+  }
+  body{
+    background: rgb(225, 184, 238);
+  }
+  header{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  h1{
+    color: red;
+  }
+  #deleteallnotes{
+    color: black;
+    background: rgb(225, 184, 238);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 1px solid #00695C;
+  }
+  .noteslist{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .note{
+    background: white;
+    border: 1px solid darkgrey;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .note button{
+    background: #00695C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin: 1rem 0.5rem;
+    border-radius: 12px;
+    gap: 1rem;
+  }
+  .createnote{
+    background: white;
+    border: 1px solid darkgrey;
+    padding: 1rem;
+    width: 40vw;
+    margin: 1rem;
+    border-radius: 12px;
+  }
+  input, textarea{
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #00695C;
+    margin: 0.8rem 0;
+  }
+  #createNoteButton{
+    background: #F4511E;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    border: none;
+    margin: 0.8rem 0;
+    border-radius: 12px;
+  }
+  h2{
+    margin: 1rem;
+  }
+  </style>
